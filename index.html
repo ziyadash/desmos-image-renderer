@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Desmos API -->
+    <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <!-- OpenCV.js -->
+    <script src="./opencv.js" type="text/javascript"></script>
+    <!-- Custom Scripts -->
+    <!-- (defer is so we wait for the dom to load) -->
+    <script src="script.js" type="module" defer></script>
+
+</head>
+<body>
+    <!-- add a button to upload an image. display it on screen. and use its coordinates -->
+    <!-- to dynamically size the temp potrace output, but keep the desmos window same size -->
+    <input type="file" id="input"/>
+    <canvas id="canvasInput" style="width: 700px; height: 500px; border: 1px solid black;"></canvas>
+    <button id="desmos-vectoriser" class="button-1" role="button">Desmos vectorise!</button>
+    <canvas id="canvasOutput" style="width: 700px; height: 500px; border: 1px solid black;"></canvas>
+    <div id="space"></div>
+</body>
+
+
+</html>
