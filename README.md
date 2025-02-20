@@ -41,7 +41,7 @@ The process of converting an image into Desmos-renderable equations involves sev
 ## Example Output
 Here is an example of an image rendered using the program:
 
-![Alt text](./example_output.png)
+![Alt text](./image.png)
 
 ## License
 This project is licensed under the MIT License.
